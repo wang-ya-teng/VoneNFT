@@ -1,0 +1,73 @@
+@import 'Styles/theme.scss';
+.collection {
+    margin-top: 70px;
+    min-width: 1200px;
+    .collection-header {
+        position: relative;
+        .collection-bg {
+            img {
+                min-height: 250px;
+            }
+        }
+        .collection-user-header {
+            width: 128px;
+            margin: -64px auto 0;
+            .collection-user-avatar-img {
+                border-radius: 50%;
+                width        : 128px;
+                height       : 128px;
+            }
+        }
+        .collection-user-info {
+            width: 200px;
+            margin: 20px auto;
+            text-align: center;
+            P {
+                margin-bottom: 0;
+            }
+            .collection-user-name {
+                font-size: 20px;
+                font-family: HiraginoSansGB, HiraginoSansGB-Regular;
+                color: $lightBlack;
+                font-weight: 400;
+            }
+            .collection-user-address {
+                font-size: 14px;
+                font-family: HiraginoSansGB, HiraginoSansGB-Regular;
+                color: rgba(0,0,0,0.79);
+            }
+        }
+        .collection-index-btn {
+            display: flex;
+            justify-content: center;
+            width: 300px;
+            margin: 0 auto;
+            text-align: center;
+            .col-btn {
+                width: 120px;
+                height: 50px;
+                background: $white;
+                border: 1px solid $darkBlue;
+                border-radius: 10px;
+                line-height: 50px;
+                font-size: 14px;
+                font-family: HiraginoSansGB, HiraginoSansGB-Regular;
+                font-weight: 400;
+                color: $darkBlue;
+                cursor: pointer;
+            }
+            .create-col-btn {
+                color: $white;
+                background: $darkBlue;
+                margin-left: 8px;
+            }
+        }
+    }
+    .col-items {
+        width: 1200px;
+        margin:50px auto;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap:wrap;
+    }
+}

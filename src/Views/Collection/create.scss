@@ -1,0 +1,92 @@
+@import 'Styles/theme.scss';
+.create-collection {
+    margin: 110px auto;
+    width: 750px;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center;
+    min-height: 750px;
+    .ant-form-item-label {
+        height: 50px;
+        line-height: 50px;
+    }
+    .create-collection-title {
+        padding-left: 15px;
+        text-align: left;
+        font-weight: 550;
+        font-size: 22px;
+        margin-bottom: 40px;
+        text-align: justify;
+        color: $darkBlue;
+    }
+    .create-collection-upload-image {
+        display: flex;
+        align-items: center;
+        .create-collection-area-upload {
+            margin: 0 40px 0 15px;
+            .create-collection-dropzone {
+                font-size: larger;
+                font-weight: 600;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 208px;
+                width: 208px;
+                color: rgba(233, 231, 231, 0.3);
+                background: #ffffff;
+                border: 1px solid rgba(0,0,0,0.10);
+                vertical-align: top;
+                overflow: hidden !important;
+                .preview {
+                    text-align: center;
+                }
+            }
+        }
+        .create-collection-upload-desc {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            height: 208px;
+            .create-collection-upLoad-title {
+                font-size: 16px;
+                font-family: HiraginoSansGB, HiraginoSansGB-Regular;
+                color: $lightBlack;
+                font-weight: 600;
+            }
+            .create-collection-upLoad-btn {
+                width: 240px;
+                height: 50px;
+                background: $darkBlue;
+                border-radius: 10px;
+                line-height: 50px;
+                text-align: center;
+                color: $white;
+                cursor: pointer;
+            }
+        }
+    }
+    .create-collection-input-area {
+        width: 624px;
+        padding-left: 15px;
+        padding-bottom: 100px;
+        margin-top: 50px;
+        .create-collection-input-name {
+            font-size: 16px;
+            font-weight: W3;
+            color: rgba(0, 0, 0, 0.8);
+            line-height: 70px;
+            width: 80px;
+            text-align: left;
+        }
+        .mr11 {
+            margin-right: 11px;
+        }
+        .create-collection-input-value {
+            width: 624px;
+            border: 1px solid #6080b4 !important;
+            height: 50px;
+            line-height: 50px;
+            border-radius: 10px;
+        }
+    }
+}

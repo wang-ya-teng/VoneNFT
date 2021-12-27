@@ -1,0 +1,13 @@
+.ant-modal-header {
+    border: none !important;
+}
+.buy-btn {
+    font-weight: 600;
+    font-size: 15px;
+    span {
+        color: #6080B4;
+        &:hover {
+            color: #fff;
+        }
+    }
+}

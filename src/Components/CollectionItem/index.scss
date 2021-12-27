@@ -1,0 +1,76 @@
+@import 'Styles/theme.scss';
+
+.collection-item {
+    width         : 282px;
+    height        : 390px;
+    background    : $white;
+    border        : 1px solid rgba(0, 0, 0, 0.10);
+    border-radius : 10px;
+    display       : flex;
+    flex-direction: column;
+    text-align    : center;
+    font-family   : HiraginoSansGB, HiraginoSansGB-Regular;
+    margin: 0 24px 24px 0;
+    cursor: pointer;
+    &:hover {
+        box-shadow    : 0px 0px 20px 0px rgba(96, 128, 180, 0.30);
+    }
+    &:hover .collection-item-edit-btn {
+        display: block;
+    }
+    &:nth-child(4n) {
+        margin-right: 0;
+    }
+
+    .collection-standard {
+        text-align: right;
+        padding   : 20px 10px 30px;
+        .collection-button {
+            border: none;
+            box-shadow: none;
+            padding: 0;
+            height: 0;
+        }
+    }
+
+    .collection-works {
+        .collection-works-img {
+            width        : 156px;
+            height       : 156px;
+            border-radius: 50%;
+        }
+    }
+
+    .collection-item-name {
+        font-size  : 16px;
+        font-weight: 600;
+        color      : $lightBlack;
+        text-shadow: 0px 0px 20px 0px rgba(96, 128, 180, 0.30);
+        margin-top: 15px;
+    }
+
+    .collection-item-total {
+        font-size  : 16px;
+        font-weight: 400;
+        color      : $lightBlack;
+        padding-top : 5px;
+    }
+
+    .collection-item-edit-btn {
+        display: none;
+        width        : 88px;
+        height       : 36px;
+        background   : $darkBlue;
+        border-radius: 6px;
+        line-height  : 36px;
+        text-align   : center;
+        font-size    : 14px;
+        color        : $white;
+        margin       : auto;
+        cursor: pointer;
+        a {
+            
+            color        : $white;
+        }
+    }
+}

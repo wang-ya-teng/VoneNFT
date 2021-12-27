@@ -1,0 +1,85 @@
+@import '../../dark.scss';
+@import '../../light.scss';
+
+.erc721-img {
+  width     : 100% !important;
+  margin    : auto;
+  height    : 250px;
+  object-fit: contain;
+}
+
+.ant-col-12{
+  max-width: 24% !important;
+}
+
+.creater {
+  padding: 10px 0 8px 10px;
+}
+
+.production-standard {
+  .production-button {
+    border    : none;
+    box-shadow: none;
+    padding   : 0;
+    height    : 0;
+  }
+}
+
+// .ant-col {
+//   width: 80px;
+// }
+
+.sp-between {
+  display        : flex;
+  color          : var(--color) !important;
+  justify-content: space-between;
+}
+
+.card-token {
+  background-color: var(--nft-background) !important;
+  box-shadow      : 0 6px 15px rgba(36, 37, 38, 0.08);
+  border-radius   : 1rem !important;
+  overflow        : hidden;
+  transition      : box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.card-token .ant-card-meta-description {
+  color: var(--color) !important;
+}
+
+.content-list-nft .ant-card {
+  width        : 260px !important;
+  min-height   : 338.5px !important;
+  margin       : 0 auto;
+  border-radius: 10px;
+  /* box-shadow: 0px 4px 8px rgb(235 80 134 / 40%); */
+}
+
+.content-list-nft .ant-card:hover {
+  /* box-shadow: 0px 4px 8px rgb(235 80 134 / 80%); */
+  box-shadow: 0px 0px 20px 0px rgba(96, 128, 180, 0.30) !important;
+}
+
+.content-list-nft .ant-card .ant-card-cover {
+  padding: 0;
+}
+
+.content-list-nft .ant-card .ant-card-cover img {
+  min-height   : 25vh;
+  height       : 25vh;
+  margin       : 0 auto;
+  border-radius: 5px 5px 0 0;
+  object-fit   : contain;
+}
+
+@media (max-width: 992px) {
+  .content-list-nft {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-list-nft .ant-card .ant-card-cover img {
+    height: 35vh;
+  }
+}

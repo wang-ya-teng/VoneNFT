@@ -1,0 +1,62 @@
+@import 'Styles/theme.scss';
+
+.production-item {
+    width        : 282px;
+    height       : 390px;
+    background   : $white;
+    border       : 1px solid rgba(0, 0, 0, 0.10);
+    border-radius: 10px;
+    margin: 0 24px 24px 0;
+    text-align   : left;
+    padding      : 20px 10px;
+    font-size    : 16px;
+    font-family  : HiraginoSansGB, HiraginoSansGB-W3;
+    color        : $lightBlack;
+
+    &:hover {
+        box-shadow: 0px 0px 20px 0px rgba(96, 128, 180, 0.30);
+    }
+    &:hover .collection-item-edit-btn {
+        display: block;
+    }
+    &:nth-child(4n) {
+        margin-right: 0;
+    }
+
+    .production-item-create {
+        a {
+            color: $lightBlack;
+        }
+    }
+
+    .production-works {
+        width          : 262px;
+        height         : 262px;
+        display        : flex;
+        justify-content: center;
+        align-items    : center;
+        cursor: pointer;
+        .production-works-img {
+            max-width : 262px;
+            max-height: 262px;
+        }
+    }
+
+    .production-item-price {
+        display        : flex;
+        justify-content: flex-end;
+        align-items    : center;
+        margin-top: 10px;
+        text-shadow: 0px 0px 20px 0px rgba(96,128,180,0.30); 
+        font-family: HiraginoSansGB, HiraginoSansGB-W6;
+        font-weight: 600;
+        .production-standard {
+            .production-button {
+                border    : none;
+                box-shadow: none;
+                padding   : 0;
+                height    : 0;
+            }
+        }
+    }
+}
