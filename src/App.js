@@ -1,5 +1,5 @@
 import './App.scss';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { HashRouter, Switch, Route } from 'react-router-dom';
 import { lazy, Suspense, useEffect } from 'react';
 import store from 'Store/index';
 import NavBar from 'Components/NavBar';
@@ -34,7 +34,7 @@ function App() {
 
   return (
     <div style={{ height: '100vh', position: 'relative' }}>
-      <BrowserRouter>
+      <HashRouter>
         <div className='page content'>
           <Notification />
           <StatusActivity />
@@ -65,7 +65,7 @@ function App() {
             </div>
           </Suspense>
         </div>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
